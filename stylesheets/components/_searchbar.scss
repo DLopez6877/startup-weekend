@@ -1,0 +1,31 @@
+.searchbar {
+  background-color: $primary-color;
+  padding: 60px 0;
+  text-align: center;
+  color: white;
+  h2 {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+input {
+  border-radius: 5px;
+  border: solid 1px white;
+  font-size: 2em;
+  padding: .3em;
+  height: 58px;
+  &[type="text"] {
+    background-color: $primary-color;
+    width: 70%;
+  }
+  &::placeholder {
+    color: white;
+  }
+}
