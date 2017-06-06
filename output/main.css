@@ -684,6 +684,10 @@ input::placeholder {
   color: white;
 }
 
+.searchbar2 {
+  background-color: #33b06c;
+}
+
 body {
   color: #414141;
 }
