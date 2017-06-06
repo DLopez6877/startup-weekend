@@ -12,6 +12,7 @@
 
 // 3. Base stuff
 @import
+  'base/reset',
   'base/base',
   'base/fonts',
   'base/typography',
@@ -19,6 +20,7 @@
 
 // 4. Layout-related sections
 @import
+  'layout/grid',
   'layout/header',
   'layout/footer',
   'layout/description';

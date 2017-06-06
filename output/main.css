@@ -432,6 +432,52 @@ template {
   display: none;
 }
 
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cf {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 html {
   font-family: 'Open Sans', 'Montserrat', sans-serif;
 }
@@ -462,6 +508,34 @@ h4 {
   font-size: 1.3em;
 }
 
+p {
+  font-family: 'Open Sans';
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.7em;
+}
+
+.row {
+  padding: 30px;
+  overflow: auto;
+}
+
+.column {
+  float: left;
+  width: 95%;
+  margin: 2.5%;
+}
+
+@media screen and (min-width: 728px) {
+  .column {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .column {
+    width: 20%;
+  }
+}
 .top {
   padding: 15px 30px;
   background-color: white;
@@ -469,6 +543,22 @@ h4 {
 
 .description {
   padding: 30px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.description-cards .column {
+  padding: 0 30px;
+  background-color: white;
+  margin-top: 72.5px;
+}
+@media (min-width: 726px) {
+  .description-cards .column {
+    min-height: 670px;
+  }
+}
+.description-cards .column img {
+  margin-top: -72.5px;
 }
 
 .bars {
@@ -492,7 +582,7 @@ h4 {
   color: white;
 }
 .searchbar h2 {
-  margin: 0;
+  margin: 0 0 40px 0;
 }
 .searchbar a {
   text-decoration: none;
@@ -512,6 +602,16 @@ input {
 input[type="text"] {
   background-color: #3ccf80;
   width: 70%;
+}
+input[name="button"] {
+  background-color: white;
+  color: #33b06c;
+  width: 20%;
+  border: none;
+}
+input[name="button"]:hover {
+  background-color: #33b06c;
+  color: white;
 }
 input::placeholder {
   color: white;

@@ -1,3 +1,19 @@
 .description {
   padding: $padding-sides;
+  text-align: center;
+  background-color: $neutral-color;
+}
+
+.description-cards {
+  .column {
+    padding: 0 $padding-sides;
+    background-color: white;
+    margin-top: 72.5px;
+    @include respond-to('medium') {
+      min-height: 670px;
+    }
+    img {
+      margin-top: -72.5px;
+    }
+  }
 }

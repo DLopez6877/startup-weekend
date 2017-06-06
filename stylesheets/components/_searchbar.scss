@@ -4,7 +4,7 @@
   text-align: center;
   color: white;
   h2 {
-    margin: 0;
+    margin: 0 0 40px 0;
   }
   a {
     text-decoration: none;
@@ -24,6 +24,16 @@ input {
   &[type="text"] {
     background-color: $primary-color;
     width: 70%;
+  }
+  &[name="button"] {
+    background-color: white;
+    color: $secondary-color;
+    width: 20%;
+    border:none;
+    &:hover{
+      background-color: $secondary-color;
+      color: white;
+    }
   }
   &::placeholder {
     color: white;
