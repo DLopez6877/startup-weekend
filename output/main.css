@@ -535,6 +535,10 @@ p {
   .column {
     width: 20%;
   }
+
+  .column-6 {
+    width: 45%;
+  }
 }
 .top {
   padding: 15px 30px;
