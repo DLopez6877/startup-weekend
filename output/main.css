@@ -552,7 +552,7 @@ p {
   background-color: white;
   margin-top: 72.5px;
 }
-@media (min-width: 726px) {
+@media (min-width: 790px) {
   .description-cards .column {
     min-height: 670px;
   }
@@ -561,10 +561,63 @@ p {
   margin-top: -72.5px;
 }
 
+.numbers {
+  background-color: white;
+  text-align: center;
+}
+.numbers h1 {
+  color: #3ccf80;
+  font-size: 400%;
+  margin: 0;
+}
+
+.schedule {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding-top: 60px;
+}
+.schedule h4 {
+  color: #9a9a9a;
+}
+.schedule .column {
+  background: white;
+}
+.schedule .column img {
+  width: 100%;
+}
+.schedule .column p {
+  padding: 0 30px;
+}
+.schedule .column h3 {
+  color: #9a9a9a;
+  font-size: 1.5em;
+  font-family: 'Montserrat';
+}
+
 .bars {
   float: right;
   padding: 10px 0 0 0;
   color: #3ccf80;
+}
+@media (min-width: 790px) {
+  .bars {
+    display: none;
+  }
+}
+
+ul {
+  display: none;
+  float: right;
+}
+@media (min-width: 790px) {
+  ul {
+    display: inline-block;
+  }
+}
+ul li {
+  font-size: 1.2em;
+  display: inline-block;
+  margin-left: 50px;
 }
 
 .intro-content {
@@ -573,6 +626,20 @@ p {
   background-size: cover;
   padding: 40px 30px 50px 30px;
   color: white;
+}
+@media (min-width: 1100px) {
+  .intro-content h1 {
+    font-size: 300%;
+    text-align: center;
+  }
+}
+@media (min-width: 1100px) {
+  .intro-content h4 {
+    font-size: 150%;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 .searchbar {
@@ -594,7 +661,7 @@ p {
 
 input {
   border-radius: 5px;
-  border: solid 1px white;
+  border: solid 3px white;
   font-size: 2em;
   padding: .3em;
   height: 58px;
@@ -615,6 +682,10 @@ input[name="button"]:hover {
 }
 input::placeholder {
   color: white;
+}
+
+body {
+  color: #414141;
 }
 
 /*# sourceMappingURL=main.css.map */

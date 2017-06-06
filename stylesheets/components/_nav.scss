@@ -2,4 +2,20 @@
   float: right;
   padding: 10px 0 0 0;
   color: $primary-color;
+  @include respond-to('medium') {
+    display: none;
+  }
+}
+
+ul {
+  display: none;
+  float: right;
+  @include respond-to('medium') {
+    display: inline-block;
+  };
+  li {
+    font-size: 1.2em;
+    display: inline-block;
+    margin-left: 50px;
+  }
 }

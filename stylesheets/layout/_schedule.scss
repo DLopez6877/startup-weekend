@@ -1,0 +1,22 @@
+.schedule {
+  background-color: $neutral-color;
+  text-align: center;
+  padding-top: 60px;
+  h4 {
+    color: #9a9a9a;
+  }
+  .column {
+    background: white;
+    img{
+      width: 100%;
+    }
+    p {
+      padding: 0 $padding-sides;
+    }
+    h3 {
+      color: #9a9a9a;
+      font-size: 1.5em;
+      font-family: 'Montserrat';
+    }
+  }
+}

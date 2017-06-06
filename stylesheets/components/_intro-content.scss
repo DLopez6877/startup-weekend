@@ -4,4 +4,18 @@
   background-size: cover;
   padding: 40px $padding-sides 50px $padding-sides;
   color: white;
+  h1 {
+    @include respond-to('large') {
+      font-size: 300%;
+      text-align: center;
+    }
+  }
+  h4 {
+    @include respond-to('large') {
+      font-size: 150%;
+      text-align: center;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
 }
